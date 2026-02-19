@@ -115,4 +115,13 @@ button{
 .copy-btn{
   background:#5865F2;
   margin-top:10px;
+
+}
+
+@media (max-width: 600px){
+  .main-title{
+    font-size:64px;
+    letter-spacing:6px;
+    margin-bottom:30px;
+  }
 }
