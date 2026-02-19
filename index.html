@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orlando Rodas</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+<h1 class="main-title">ORLANDO RODAS</h1>
+
+<h2>Redes Sociales</h2>
+
+<div class="card-grid">
+
+<a href="https://facebook.com/" target="_blank" class="card">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+  <div>Facebook</div>
+</a>
+
+<a href="https://instagram.com/" target="_blank" class="card">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
+  <div>Instagram</div>
+</a>
+
+<a href="https://tiktok.com/" target="_blank" class="card">
+  <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+  <div>TikTok</div>
+</a>
+
+<div class="card" onclick="openModal()">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+  <div>WhatsApp</div>
+</div>
+
+</div>
+
+<h2>Videojuegos</h2>
+
+<div class="card-grid">
+
+<a href="https://launch.minecraft.net/profile/OrlandoR1014/" target="_blank" class="card">
+  <img src="URL_LOGO_MINECRAFT">
+  <div>Minecraft</div>
+</a>
+
+<a href="https://link.brawlstars.com/invite/friend/es?tag=2Q8J08L2Q0&token=RodasWalker303" target="_blank" class="card">
+  <img src="URL_LOGO_BRAWL">
+  <div>Brawl Stars</div>
+</a>
+
+<div class="card">
+  <img src="URL_LOGO_SUPERSUS">
+  <div>Super Sus</div>
+  <div>ID: 86170482</div>
+  <button class="copy-btn" onclick="copyID()">Copiar ID</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- Modal WhatsApp -->
+<div class="modal" id="whatsappModal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal()">Cerrar</button>
+    <h3>Contacto WhatsApp</h3>
+
+    <form action="https://formspree.io/f/xqedlwer" method="POST">
+
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="text" name="apellido" placeholder="Apellido" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+
+      <select name="prefijo" id="countryCode" required>
+        <option value="">Prefijo</option>
+        <option value="+1" data-length="10">+1 (USA/Canadá)</option>
+        <option value="+52" data-length="10">+52 México</option>
+        <option value="+502" data-length="8">+502 Guatemala</option>
+        <option value="+503" data-length="8">+503 El Salvador</option>
+        <option value="+504" data-length="8">+504 Honduras</option>
+        <option value="+505" data-length="8">+505 Nicaragua</option>
+        <option value="+506" data-length="8">+506 Costa Rica</option>
+        <option value="+507" data-length="8">+507 Panamá</option>
+        <option value="+57" data-length="10">+57 Colombia</option>
+        <option value="+58" data-length="10">+58 Venezuela</option>
+        <option value="+51" data-length="9">+51 Perú</option>
+        <option value="+54" data-length="10">+54 Argentina</option>
+        <option value="+56" data-length="9">+56 Chile</option>
+        <option value="+55" data-length="11">+55 Brasil</option>
+      </select>
+
+      <input type="tel" name="telefono" id="phone" placeholder="Número" required pattern="[0-9]+">
+      <textarea name="mensaje" placeholder="Mensaje (opcional)"></textarea>
+      <button type="submit">Enviar</button>
+
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
